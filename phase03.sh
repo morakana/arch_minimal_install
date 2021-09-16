@@ -32,6 +32,9 @@ echo ""
 echo "pkgfile --update"
 pkgfile --update
 echo ""
+echo "enable NetworkManager"
+systemctl enable NetworkManager
+echo ""
 echo "remove config phase03.sh"
 rm ./config
 rm ./phase03.sh
@@ -42,8 +45,7 @@ echo "please do the following post-processing"
 echo ""
 echo "exit chroot"
 echo "remove the installation media and reboot"
-echo "systemctl enable NetworkManager"
-echo "reboot"
+echo ""
 echo ""
 echo ""
 echo "bye."
