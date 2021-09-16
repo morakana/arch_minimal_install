@@ -13,16 +13,15 @@ ArchLinuxのインストーラ( https://archlinux.org/download/ から取得)を
 
 ミラーリポジトリを取得します
 reflector --country 'Japan' --sort rate --save /etc/pacman.d/mirrorlist
-(warningが出たりしますが基本的には気にしなくて大丈夫です)
+(warningが出たりすることがありますが基本的には気にしなくて大丈夫です)
 
 pacman -Sy && pacman -S git
 としてgitをインストールしてしてください
 (-Syuとしてしまうとインストーラの環境でアップデートまで行われてしまいますので、
 -Syでデータベースの更新だけ行ってください)
 
-gitでこのリポジトリを取得して、
 git clone https://github.com/morakana/arch_minimal_install.git
-そのディレクトリに移動してください
+でこのリポジトリを取得して、そのディレクトリに移動してください
 
 config の 内容を書き換えてください ()の中はデフォルト値
   1行目 が キーマップ             (jp106)
