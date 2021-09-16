@@ -4,7 +4,7 @@
   必ずUEFIモードで起動できるPCで行ってください。
 -------------------------------------------------------------------------------------------------
 
-ArchLinuxのインストーラを起動します
+ArchLinuxのインストーラ(https://archlinux.org/download/)を起動します
 
 プロンプトが表示されるまで待ってください
 
@@ -15,7 +15,8 @@ ArchLinuxのインストーラを起動します
 reflector --country 'Japan' --sort rate --save /etc/pacman.d/mirrorlist
 (warningが出たりしますが基本的には気にしなくて大丈夫です)
 
-「pacman -Sy && pacman -S git」としてgitをインストールしてしてください
+pacman -Sy && pacman -S git
+としてgitをインストールしてしてください
 (-Syuとしてしまうとインストーラの環境でアップデートまで行われてしまいますので、
 -Syでデータベースの更新だけ行ってください)
 
