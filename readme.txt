@@ -19,7 +19,9 @@ reflector --country 'Japan' --sort rate --save /etc/pacman.d/mirrorlist
 (-Syuとしてしまうとインストーラの環境でアップデートまで行われてしまいますので、
 -Syでデータベースの更新だけ行ってください)
 
-gitでこのリポジトリを取得して、そのデイレクトリに移動してください
+gitでこのリポジトリを取得して、
+git clone https://github.com/morakana/arch_minimal_install.git
+そのデEィレクトリに移動してください
 
 config の 内容を書き換えてください ()の中はデフォルト値
   1行目 が キーマップ             (jp106)
