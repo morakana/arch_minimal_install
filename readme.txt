@@ -11,9 +11,11 @@ ArchLinuxのインストーラ( https://archlinux.org/download/ から取得)を
 日本語キーボードを使っている場合は loadkeys jp106 を実行します
 (行わない場合はキーマップがずれてしまいます)
 
-ミラーリポジトリを取得します
+ミラーリポジトリを取得します (この設定が新環境にも引き継がれます)
 reflector --country 'Japan' --sort rate --save /etc/pacman.d/mirrorlist
 (warningが出たりすることがありますが基本的には気にしなくて大丈夫です)
+もしも思ったようなリポジトリじゃなかったり速度が出ない場合は、
+再度実行してみたりすると良いかと思います。
 
 pacman -Sy && pacman -S git
 としてgitをインストールしてしてください
